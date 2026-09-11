@@ -365,7 +365,7 @@ const COLORS = {
 const NAV_ITEMS = [
   { label: 'Home', href: '#home' },
   { label: 'How it works', href: '#how-it-works' },
-  { label: 'Restaurants', href: '#restaurants' },
+  // { label: 'Restaurants', href: '#restaurants' },
   { label: 'Download app', href: '#download' },
   { label: 'Contact', href: '#contact' },
 ]
