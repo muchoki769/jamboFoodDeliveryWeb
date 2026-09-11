@@ -46,7 +46,7 @@ export default function MpesaFlow() {
               How <span className="text-green-600">M-Pesa</span> Payments Work
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Pay securely using Safaricom M-Pesa. Simple, fast, and trusted by millions.
+              Pay securely using  M-Pesa. Reliable, fast, and trusted by millions.
             </p>
           </motion.div>
         </div>

@@ -17,13 +17,13 @@ export default function Home() {
     <>
       <Hero />
       {/* <FeaturedRestaurants /> */}
-       <RestaurantSection />
+       {/* <RestaurantSection/> */}
       <HowItWorks />
       <PaymentMethods />
       <AboutSection />
       <ContactSection />
-      <Testimonials />
-      <SecurityBadges />
+      {/* <Testimonials /> */}
+      {/* <SecurityBadges /> */}
       <DownloadApp />
     </>
   )

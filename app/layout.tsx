@@ -29,13 +29,13 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Jambo Food Delivery - Fresh Food Delivered Fast',
-  description: 'Order delicious food from the best restaurants in your area. Fast delivery, secure payments with Paystack.',
-  keywords: 'food delivery, online ordering, restaurant delivery, Paystack payments',
+  description: 'Order delicious food from the best restaurants in your area. Fast delivery, secure payments, and a seamless online ordering experience.',
+  keywords: 'food delivery, online ordering, best restaurants,secure payments',
   openGraph: {
     title: 'Jambo Food Delivery',
     description: 'Fresh Food Delivered Fast',
     type: 'website',
-    images: ['/images/og-image.jpg'],
+    images: ['https://www.jambofooddelivery.com/web/icon-512.png'],
   }
 }
 
@@ -54,6 +54,21 @@ export default function RootLayout({
     // </html>
 
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Jambo Food Delivery',
+              url: 'https://jambofooddelivery.com',
+              "logo": "https://jambofooddelivery.com/web/icon-512.png"
+            }),
+          }}
+        />
+      </head>
       <body className="min-h-screen bg-gradient-to-b from-gray-50 to-white font-sans">
         <Navbar />
         <main className="pt-16">
