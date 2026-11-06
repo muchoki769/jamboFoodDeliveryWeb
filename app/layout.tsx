@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inter, Poppins } from 'next/font/google'
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -55,6 +56,23 @@ export default function RootLayout({
 
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
+        
+        <Script
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-NK5V8VWB"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+            `,
+          }}
+        />
+
         <link rel="icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
@@ -67,7 +85,7 @@ export default function RootLayout({
               "logo": "https://jambofooddelivery.com/web/icon-512.png"
             }),
           }}
-        />
+          />
       </head>
       <body className="min-h-screen bg-gradient-to-b from-gray-50 to-white font-sans">
         <Navbar />
