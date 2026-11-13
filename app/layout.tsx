@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Inter, Poppins } from 'next/font/google'
 import Script from "next/script";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import { Toaster } from "react-hot-toast";
@@ -110,6 +111,7 @@ export default function RootLayout({
             },
           }}
         />
+        <Analytics/>
       </body>
     </html>
 
